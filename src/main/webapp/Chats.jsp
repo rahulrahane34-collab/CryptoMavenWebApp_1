@@ -61,12 +61,12 @@
 
 <div class="chat-container">
     <!-- Header -->
-    <div class="chat-header">
+    <div class="chat-header"> // encrypted name for chat
         Secure Chat - Welcome, <%= session.getAttribute("username") %>
     </div>
 
     <!-- Messages -->
-    <div class="chat-messages">
+    <div class="chat-messages"> // container for chats from bot side
         <%-- Example messages (replace with DB messages using Hibernate) --%>
         <div class="message sent">Hello, how are you?</div>
         <div class="message received">I’m fine, thanks! What about you?</div>
@@ -74,7 +74,7 @@
     </div>
 
     <!-- Input -->
-    <div class="chat-input">
+    <div class="chat-input"> // input element for user msg 
         <form action="SendMessageServlet" method="post" class="d-flex">
             <input type="text" name="message" class="form-control me-2" placeholder="Type a message" required>
             <button type="submit" class="btn btn-success">Send</button>
